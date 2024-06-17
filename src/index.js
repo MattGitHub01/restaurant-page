@@ -1,4 +1,10 @@
-import './style.css';
+import './index.css';
+import { homeBtn, menuBtn, aboutBtn } from './switch';
+
+homeBtn()
+menuBtn()
+aboutBtn()
+// Imports menu event listeners
 
 function component() {
     const content = document.querySelector('.content');

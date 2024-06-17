@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'atomic-font';
     src: 
-        url('./atomic-font.woff2') format('woff2'),
-        url('./atomic-font.woff') format('woff');
+        url('./fonts/atomic-font.woff2') format('woff2'),
+        url('./fonts/atomic-font.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'akashi-font';
-    src: url('./akashi-font.woff2') format('woff2'),
-         url('./akashi-font.woff') format('woff');
+    src: url('./fonts/akashi-font.woff2') format('woff2'),
+         url('./fonts/akashi-font.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'main-font';
-    src: url('./main-font.woff2') format('woff2'),
-         url('./main-font.woff') format('woff');
+    src: url('./fonts/main-font.woff2') format('woff2'),
+         url('./fonts/main-font.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -73,7 +73,7 @@ nav button:hover {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-image: url('./restaurant-background.jpg');
+    background-image: url('./images/restaurant-background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
