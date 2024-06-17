@@ -68,12 +68,9 @@ nav button:hover {
     justify-content: center;
 }
 
-/* Index Page Element */
-
 .content-background {
     display: flex;
     width: 100%;
-    height: 100%;
     flex-direction: column;
     align-items: center;
     background-image: url('./images/restaurant-background.jpg');
@@ -81,43 +78,10 @@ nav button:hover {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    height: 100%;
 }
 
 .h1-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    border-radius: 50%;
-    text-align: center;
-    margin: 6rem;
-    width: 30rem;
-    height: 30rem;
-}
-
-.title {
-    font-size: 5rem;
-    color: white;
-    font-family: 'atomic-font';
-}
-
-/* Home Page Element */
-
-
-.home-content-background {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('./images/restaurant-background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-.home-h1-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,13 +93,13 @@ nav button:hover {
     height: 12.5rem;
 }
 
-.home-title {
+.title {
     font-size: 2rem;
     color: white;
     font-family: 'atomic-font';
 }
 
-.home-intro-text-background {
+.intro-text-background {
     display: flex;
     justify-content: space-around;
     border-radius: 25px;
@@ -143,9 +107,10 @@ nav button:hover {
     margin: 4rem;
 }
 
-.home-intro-txt {
+.intro-txt {
     padding: 1rem 1rem 1rem 1rem;
     color: white;
+
     font-family: 'main-font';
     font-size: 1.8rem;
     text-align: center;
