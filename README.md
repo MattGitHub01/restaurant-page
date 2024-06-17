@@ -1,2 +1,1 @@
-# restaurant-page
-Mock restaurant page created using Webpack
+Mock restaurant page using Webpack. Designed and coded by me for The Odin Project's project prompt.
