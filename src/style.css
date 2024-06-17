@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'atomic-font';
+    src: 
+        url('./atomic-font.woff2') format('woff2'),
+        url('./atomic-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akashi-font';
+    src: url('./akashi-font.woff2') format('woff2'),
+         url('./akashi-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'main-font';
+    src: url('./main-font.woff2') format('woff2'),
+         url('./main-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(51, 51, 51);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 5rem;
+}
+
+nav button {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.8rem;
+    font-family: 'akashi-font';
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+nav button:hover {
+    background-color: white;
+    color: rgb(51, 51, 51);
+    border: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-background {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./restaurant-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.h1-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    margin: 2rem;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    font-family: 'atomic-font';
+}
+
+.intro-text-background {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: hsla(0, 0%, 30%, 0.5);
+    margin: 4rem;
+}
+
+.intro-txt {
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+
+    font-family: 'main-font';
+    font-size: 1.8rem;
+    text-align: center;
+}
