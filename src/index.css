@@ -25,6 +25,7 @@
 
 body {
     background-color: rgb(51, 51, 51);
+    height: 100vh;
 }
 
 header {
@@ -60,21 +61,13 @@ nav button:hover {
     border: none;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
 .content-background {
     display: flex;
     width: 100%;
-    height: 40.3rem;
+    height: 100%;
     flex-direction: column;
     align-items: center;
+    background-color: white;
     background-image: url('./images/restaurant-background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,20 +93,36 @@ nav button:hover {
     font-family: 'atomic-font';
 }
 
-.content-background {
+.text-background {
     display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('./images/restaurant-background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    line-height: 2;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 25px;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
 }
 
-.h1-wrapper {
+.txt {
+    padding: .5rem .2rem 0rem .2rem;
+    margin: .2rem 0rem .2rem 0rem;
+    color: white;
+    font-family: 'main-font';
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Menu Page specific CSS */
+
+.pages-title {
+    font-size: 2rem;
+    color: white;
+    font-family: 'atomic-font';
+}
+
+.pages-h1-background {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,50 +134,14 @@ nav button:hover {
     height: 110px;
 }
 
-.title {
-    font-size: 2rem;
-    color: white;
-    font-family: 'atomic-font';
-}
-
-.intro-text-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background-color: hsla(0, 0%, 30%, 0.5);
-    padding: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
-
-.intro-txt {
-    padding: 1rem 1rem 1rem 1rem;
-    color: white;
-    font-family: 'main-font';
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-/* Contact CSS */
-
-.contact-intro-text-background {
+.pages-text-background {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    background-color: hsla(0, 0%, 30%, 0.5);
-    padding: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
-
-/* Menu CSS */
-
-.menu {
-    color: white;
-    font-family: 'main-font';
-    font-size: 1.8rem;
-    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
 }

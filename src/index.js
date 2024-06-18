@@ -1,37 +1,38 @@
 import './index.css';
 
-function introPg() {
+function siteStart() {
     const content = document.querySelector('.content');
 
-    const contentImg = document.createElement('div');
-    contentImg.classList.add('content-background');
-    content.appendChild(contentImg);
+    const contentBckgrnd = document.createElement('div');
+    contentBckgrnd.classList.add('content-background');
+    content.appendChild(contentBckgrnd);
 
-    const h1Wrapper = document.createElement('div');
-    h1Wrapper.classList.add('h1-wrapper');
-    contentImg.appendChild(h1Wrapper);
+    const titleBckgrnd = document.createElement('div');
+    titleBckgrnd.classList.add('h1-wrapper');
+    contentBckgrnd.appendChild(titleBckgrnd);
 
-    const nameTitle = document.createElement('h1');
-    nameTitle.classList.add('title');
-    nameTitle.textContent = `fUUd NYC`;
-    h1Wrapper.appendChild(nameTitle);
+    const titleTxt = document.createElement('h1');
+    titleTxt.classList.add('title');
+    titleTxt.textContent = `FuuD NYC`;
+    titleBckgrnd.appendChild(titleTxt);
 
-    const introTxtBackground = document.createElement('div');
-    contentImg.appendChild(introTxtBackground);
+    const txtBackground = document.createElement('div');
+    txtBackground.classList.add('text-background');
+    contentBckgrnd.appendChild(txtBackground);
 
-    const textOne = document.createElement('div');
-    introTxtBackground.appendChild(textOne);
+    const txtAreaOne = document.createElement('div');
+    txtBackground.appendChild(txtAreaOne);
 
-    const textTwo = document.createElement('div');
-    introTxtBackground.appendChild(textTwo);
+    const txtAreaTwo = document.createElement('div');
+    txtBackground.appendChild(txtAreaTwo);
 
-    const textThree = document.createElement('div');
-    introTxtBackground.appendChild(textThree);
+    const txtAreaThree = document.createElement('div');
+    txtBackground.appendChild(txtAreaThree);
 
-    const textFour = document.createElement('div');
-    introTxtBackground.appendChild(textFour);
+    const txtAreaFour = document.createElement('div');
+    txtBackground.appendChild(txtAreaFour);
 
-    let clicked = {
+    let pageActive = {
         home: false,
         menu: false,
         abt: false
@@ -39,110 +40,90 @@ function introPg() {
 
     const homeBtn = document.querySelector('.home-btn');
     homeBtn.addEventListener('click', () => {
-        if (clicked.home == false) {
-            clicked.home = true;
-            clicked.menu = false;
-            clicked.abt = false;
-            content.removeChild(contentImg);
-            content.appendChild(contentImg);
+        if (pageActive.home == false) {
+            pageActive.home = true;
+            pageActive.menu = false;
+            pageActive.abt = false;
+            content.removeChild(contentBckgrnd);
+            content.appendChild(contentBckgrnd);
             // Remove previous page and append same elements with new classes for CSS
             
-            h1Wrapper.classList.remove();
-            h1Wrapper.classList.add('home-h1-wrapper');
+            titleBckgrnd.classList.replace('h1-wrapper', 'pages-h1-background');
 
-            nameTitle.classList.remove();
-            nameTitle.classList.add('home-title');
+            titleTxt.classList.replace('title', 'pages-title');
 
-            introTxtBackground.classList.remove();
-            introTxtBackground.classList.add('home-intro-text-background');
+            txtBackground.classList.replace('pages-text-background', 'text-background');
 
-            textOne.classList.remove();
-            textOne.classList.add('home-intro-txt');
-            textOne.textContent = `fUUd NYC, the newest exclusive three Michelin-starred dining experience in the heart of Manhattan. Nestled really... very high up atop One Vanderbilt in Midtown. Reveal your hidden pallet and engage all your senses with world renowned celebrity chef "Little-Drakey-Yum-Yum"'s intimate culinary experience... fUUd New York.`;
+            txtAreaOne.classList.add('txt');
+            txtAreaOne.textContent = `fUUd NYC, the newest exclusive three Michelin-starred dining experience in the heart of Manhattan. Nestled really... very high up atop One Vanderbilt in Midtown. Reveal your hidden pallet and engage all your senses with world renowned celebrity chef "Little-Drakey-Yum-Yum"'s intimate culinary experience... fUUd New York.`;
 
-            textTwo.classList.remove();
-            textTwo.textContent = '';
+            txtAreaTwo.textContent = '';
 
-            textThree.classList.remove();
-            textThree.textContent = '';
+            txtAreaThree.textContent = '';
 
-            textFour.classList.remove();
-            textFour.textContent = '';
+            txtAreaFour.textContent = '';
         }
     });
 
     const menuBtn = document.querySelector('.menu-btn');
     menuBtn.addEventListener('click', () => {
-        if (clicked.menu == false) {
-            clicked.menu = true;
-            clicked.home = false;
-            clicked.abt = false;
-            content.removeChild(contentImg);
-            content.appendChild(contentImg);
+        if (pageActive.menu == false) {
+            pageActive.menu = true;
+            pageActive.home = false;
+            pageActive.abt = false;
+            content.removeChild(contentBckgrnd);
+            content.appendChild(contentBckgrnd);
             // Remove previous page and append same elements with new classes for CSS
 
-            h1Wrapper.classList.remove();
-            h1Wrapper.classList.add('home-h1-wrapper');
+            titleBckgrnd.classList.replace('h1-wrapper', 'pages-h1-background');
 
-            nameTitle.classList.remove();
-            nameTitle.classList.add('home-title');
+            titleTxt.classList.replace('title', 'pages-title');
 
-            introTxtBackground.classList.remove();
-            introTxtBackground.classList.add('contact-intro-text-background');
+            txtBackground.classList.replace('text-background', 'pages-text-background');
             
-            textOne.classList.remove();
-            textOne.classList.add('menu1-intro-txt');
-            textOne.textContent = `Dirty Martini: It sounds sexy but.. olives... I'll let you do the math on that I guess.`;
+            txtAreaOne.classList.add('txt');
+            txtAreaOne.textContent = `Dirty Martini: It sounds sexy but.. olives... I'll let you do the math on that I guess.`;
 
-            textTwo.classList.remove();
-            textTwo.classList.add('menu2-intro-txt')
-            textTwo.textContent = `Hamburger: Loved by hamburger clowns and stolen by half-man-half-hamburger-half-cannibals everywhere.`
+            txtAreaTwo.classList.add('txt');
+            txtAreaTwo.textContent = `Hamburger: Loved by hamburger clowns and stolen by half-man-half-hamburger-half-cannibals everywhere.`;
 
-            textThree.classList.remove();
-            textThree.classList.add('menu3-intro-txt')
-            textThree.textContent = `Sandwich: Now just picture yourself, mouth watering, sinking your teeth into a sandwich. Now you know how I spend my free time.`;
+            txtAreaThree.classList.add('txt');
+            txtAreaThree.textContent = `Sandwich: Now just picture yourself, mouth watering, sinking your teeth into a sandwich. Now you know how I spend my free time.`;
 
-            textFour.classList.remove();
-            textFour.classList.add('menu4-intro-txt')
-            textFour.textContent = `Lobster: Feisty, aggressive and afraid to die this lobster is as fresh as it gets! Following our sustainable sea-to-mouth philosophy we ensure every lobster comes to you straight out of the East River. Bon Appétit!`;
-
+            txtAreaFour.classList.add('txt');
+            txtAreaFour.textContent = `Lobster: Feisty, aggressive and afraid to die this lobster is as fresh as it gets! Following our sustainable sea-to-mouth philosophy we ensure every lobster comes to you straight out of the East River. Bon Appétit!`;
         }
     });
 
     const contactBtn = document.querySelector('.contact-btn');
     contactBtn.addEventListener('click', () => {
-        if (clicked.abt == false) {
-            clicked.abt = true;
-            clicked.home = false;
-            clicked.menu = false;
-            content.removeChild(contentImg);
-            content.appendChild(contentImg);
+        if (pageActive.abt == false) {
+            pageActive.abt = true;
+            pageActive.home = false;
+            pageActive.menu = false;
+            content.removeChild(contentBckgrnd);
+            content.appendChild(contentBckgrnd);
             // Remove previous page and append same elements with new classes for CSS
 
-            h1Wrapper.classList.remove();
-            h1Wrapper.classList.add('home-h1-wrapper');
+            titleBckgrnd.classList.replace('h1-wrapper', 'pages-h1-background');
 
-            nameTitle.classList.remove();
-            nameTitle.classList.add('home-title');
+            titleTxt.classList.replace('title', 'pages-title');
 
-            introTxtBackground.classList.remove();
-            introTxtBackground.classList.add('contact-intro-text-background');
-            
-            textOne.classList.remove();
-            textOne.classList.add('home-intro-txt');
-            textOne.textContent = `Hours: 10:00am - 11:00pm`;
+            txtBackground.classList.replace('text-background', 'pages-text-background');
 
-            textTwo.classList.remove();
-            textTwo.classList.add('home-intro-txt')
-            textTwo.textContent = `Phone Number: 555-555-555`;
+            txtAreaOne.classList.add('txt');
+            txtAreaOne.textContent = `Hours: 10:00am - 11:00pm`;
 
-            textThree.classList.remove();
-            textThree.textContent = '';
+            txtAreaTwo.classList.add('txt');
+            txtAreaTwo.textContent = `Phone Number: 555-555-555`;
 
-            textFour.classList.remove();
-            textFour.textContent = '';
+            txtAreaThree.classList.add('txt');
+            txtAreaThree.textContent = 'Email: fuud-manhattan@fUUdfUUd.gov';
+
+            txtAreaFour.classList.add('txt');
+            txtAreaFour.textContent = '';
         }
     });
 }
 
-introPg()
+siteStart()
