@@ -100,10 +100,7 @@ nav button:hover {
     font-family: 'atomic-font';
 }
 
-/* Home Page Specific CSS */
-
-
-.home-content-background {
+.content-background {
     display: flex;
     width: 100%;
     height: 100%;
@@ -116,7 +113,7 @@ nav button:hover {
     background-size: cover;
 }
 
-.home-h1-wrapper {
+.h1-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,23 +125,24 @@ nav button:hover {
     height: 110px;
 }
 
-.home-title {
+.title {
     font-size: 2rem;
     color: white;
     font-family: 'atomic-font';
 }
 
-.home-intro-text-background {
+.intro-text-background {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     background-color: hsla(0, 0%, 30%, 0.5);
+    padding: 1rem;
     margin-right: 1rem;
     margin-left: 1rem;
 }
 
-.home-intro-txt {
+.intro-txt {
     padding: 1rem 1rem 1rem 1rem;
     color: white;
     font-family: 'main-font';
@@ -152,15 +150,25 @@ nav button:hover {
     text-align: center;
 }
 
-/* Contact Page Specific CSS */
+/* Contact CSS */
 
 .contact-intro-text-background {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     border-radius: 25px;
     background-color: hsla(0, 0%, 30%, 0.5);
-    margin: 4rem;
-    margin-bottom: 50px;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
+/* Menu CSS */
+
+.menu {
+    color: white;
+    font-family: 'main-font';
+    font-size: 1.8rem;
+    text-align: center;
+}
