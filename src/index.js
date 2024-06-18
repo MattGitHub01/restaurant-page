@@ -8,7 +8,7 @@ function siteStart() {
     content.appendChild(contentBckgrnd);
 
     const titleBckgrnd = document.createElement('div');
-    titleBckgrnd.classList.add('h1-wrapper');
+    titleBckgrnd.classList.add('h1-background');
     contentBckgrnd.appendChild(titleBckgrnd);
 
     const titleTxt = document.createElement('h1');
@@ -48,7 +48,7 @@ function siteStart() {
             content.appendChild(contentBckgrnd);
             // Remove previous page and append same elements with new classes for CSS
             
-            titleBckgrnd.classList.replace('h1-wrapper', 'pages-h1-background');
+            titleBckgrnd.classList.replace('h1-background', 'pages-h1-background');
 
             titleTxt.classList.replace('title', 'pages-title');
 
@@ -75,7 +75,7 @@ function siteStart() {
             content.appendChild(contentBckgrnd);
             // Remove previous page and append same elements with new classes for CSS
 
-            titleBckgrnd.classList.replace('h1-wrapper', 'pages-h1-background');
+            titleBckgrnd.classList.replace('h1-background', 'pages-h1-background');
 
             titleTxt.classList.replace('title', 'pages-title');
 
@@ -105,7 +105,7 @@ function siteStart() {
             content.appendChild(contentBckgrnd);
             // Remove previous page and append same elements with new classes for CSS
 
-            titleBckgrnd.classList.replace('h1-wrapper', 'pages-h1-background');
+            titleBckgrnd.classList.replace('h1-background', 'pages-h1-background');
 
             titleTxt.classList.replace('title', 'pages-title');
 
