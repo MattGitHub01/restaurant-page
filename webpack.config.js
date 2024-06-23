@@ -28,6 +28,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
+            favicon: "./src/images/icon.svg",
             inject: 'head',
             scriptLoading: 'defer'
         })
